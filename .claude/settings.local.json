@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp styles.css css/styles.css)",
+      "Bash(cp content.js js/content.js)",
+      "Bash(cp \"logo -2.png\" img/logo.png)",
+      "Bash(cp \"logo-3.png\" img/logo-3.png)",
+      "Bash(cp \"sosa logo.png\" img/sosa-logo.png)"
+    ]
+  }
+}
