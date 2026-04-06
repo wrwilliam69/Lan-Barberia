@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sosa Barber Collective | Tradicion y estilo en Bogota</title>
+    <meta
+      name="description"
+      content="Landing page premium para Sosa Barber Collective: cortes clasicos, VIP y Super VIP, barberia, barba, unas y productos de cuidado masculino en Bogota."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero" id="inicio">
+        <nav class="topbar">
+          <a class="brand" href="#inicio" aria-label="Ir al inicio">
+            <img src="./img/logo4.png" alt="Logo de Sosa Barber Collective" class="brand__logo" />
+            <span class="brand__text">
+              <strong id="brand-name"></strong>
+              <small id="brand-tagline"></small>
+            </span>
+          </a>
+
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+            Menu
+          </button>
+
+          <div class="menu" id="site-menu">
+            <a href="#servicios">Servicios</a>
+            <a href="#barberos">Barberos</a>
+            <a href="#productos">Productos</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#contacto">Contacto</a>
+          </div>
+        </nav>
+
+        <div class="hero__backdrop"></div>
+        <div class="hero__content container">
+          <div class="hero__copy">
+            <p class="eyebrow" id="hero-kicker"></p>
+            <h1 id="hero-title"></h1>
+            <p class="hero__text" id="hero-description"></p>
+
+            <div class="hero__actions">
+              <a class="button button--gold" id="hero-primary-link" href="#contacto"></a>
+              <a class="button button--ghost" href="#servicios">Ver servicios</a>
+            </div>
+
+            <ul class="hero__facts" id="hero-facts"></ul>
+          </div>
+
+          <aside class="hero__stage">
+            <div class="hero__lockup">
+              <div class="hero__seal">
+                <img src="./img/logo4.png" alt="Emblema Sosa Barber Collective" />
+              </div>
+              <div class="hero__lockup-copy">
+                <strong id="hero-brand-name"></strong>
+                <span id="hero-brand-tagline"></span>
+              </div>
+            </div>
+
+            <div class="hero__poster">
+              <p class="hero__poster-kicker" id="hero-poster-kicker"></p>
+              <h2 class="hero__poster-title" id="hero-poster-title"></h2>
+              <p class="hero__poster-copy" id="hero-poster-copy"></p>
+              <div class="hero__card-grid" id="experience-points"></div>
+            </div>
+          </aside>
+        </div>
+      </header>
+
+      <main>
+        <section class="section section--light">
+          <div class="container intro-grid">
+            <div>
+              <p class="eyebrow">Estilo editorial</p>
+              <h2 class="section-title" id="about-title"></h2>
+              <p class="section-copy" id="about-copy"></p>
+              <blockquote class="brand-quote">
+                <p id="quote-text"></p>
+                <footer id="quote-author"></footer>
+              </blockquote>
+              <div class="section-actions">
+                <a class="button button--dark" href="#barberos">Conocer al equipo</a>
+              </div>
+            </div>
+            <div class="intro-image">
+              <img src="./img/barberia-dos.png" alt="Servicio de barberia premium" />
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--dark" id="servicios">
+          <div class="container">
+            <p class="eyebrow eyebrow--gold">Servicios principales</p>
+            <div class="section-heading">
+              <h2 class="section-title section-title--light">Cortes, barba, manos y experiencias premium.</h2>
+              <p class="section-copy section-copy--light">
+                Todo el contenido de esta seccion se actualiza desde el archivo
+                <code>content.js</code>, incluyendo precios, descripciones y categorias.
+              </p>
+            </div>
+
+            <div class="service-tiers" id="service-tiers"></div>
+            <div class="services-grid" id="services-grid"></div>
+          </div>
+        </section>
+
+        <section class="section section--barbers" id="barberos">
+          <div class="container">
+            <p class="eyebrow">Tres barberos, una sola firma</p>
+            <div class="section-heading">
+              <h2 class="section-title section-title--light">El talento que construye la marca.</h2>
+              <p class="section-copy section-copy--light">
+                Cada perfil incluye especialidad, enfoque de servicio y experiencia para que el cliente
+                entienda rapidamente quien esta detras de la silla.
+              </p>
+            </div>
+
+            <div class="barbers-grid" id="barbers-grid"></div>
+          </div>
+        </section>
+
+        <section class="section section--sand" id="productos">
+          <div class="container">
+            <p class="eyebrow">Grooming y retail</p>
+            <div class="section-heading">
+              <h2 class="section-title">Productos para cabello, barba y cuidado masculino.</h2>
+              <p class="section-copy">
+                Esta parte funciona como vitrina para ventas directas, WhatsApp o catalogo de Instagram.
+              </p>
+            </div>
+
+            <div class="product-spotlight" id="product-spotlight"></div>
+            <div class="products-grid" id="products-grid"></div>
+          </div>
+        </section>
+
+        <section class="section section--light" id="galeria">
+          <div class="container">
+            <p class="eyebrow">Fotos y video</p>
+            <div class="section-heading">
+              <h2 class="section-title">Contenido listo para redes, reels y portafolio visual.</h2>
+              <p class="section-copy">
+                Puedes cambiar miniaturas, enlaces o videos embebidos de TikTok, YouTube e Instagram
+                desde un solo archivo.
+              </p>
+            </div>
+
+            <div class="gallery-grid" id="gallery-grid"></div>
+            <div class="video-grid" id="video-grid"></div>
+          </div>
+        </section>
+
+        <section class="section section--dark" id="contacto">
+          <div class="container contact-layout">
+            <div class="contact-panel">
+              <p class="eyebrow eyebrow--gold">Ubicacion y reservas</p>
+              <h2 class="section-title section-title--light">Bogota, Colombia</h2>
+              <p class="section-copy section-copy--light" id="contact-copy"></p>
+
+              <div class="contact-details">
+                <div>
+                  <span class="detail-label">Direccion</span>
+                  <p id="address-text"></p>
+                </div>
+                <div>
+                  <span class="detail-label">Horario</span>
+                  <p id="schedule-text"></p>
+                </div>
+                <div>
+                  <span class="detail-label">Contacto</span>
+                  <p id="contact-links"></p>
+                </div>
+              </div>
+
+              <div class="socials" id="social-links"></div>
+            </div>
+
+            <div class="map-card">
+              <iframe
+                id="map-frame"
+                title="Mapa de Sosa Barber Collective"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./js/content.js"></script>
+  </body>
+</html>
