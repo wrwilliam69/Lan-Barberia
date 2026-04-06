@@ -7,7 +7,7 @@ const siteContent = {
     kicker: "Barberia premium en Bogota",
     title: "Joven talento, criterio profesional y una marca hecha para destacar.",
     description:
-      "Sosa Barber Collective nace de tres jovenes emprendedores que entienden la barberia como imagen, disciplina y experiencia. Cada servicio esta pensado para hombres que quieren verse bien, proyectar seguridad y confiar su estilo a manos profesionales.",
+      "Este proyecto nace de la vision de Jaider, quien decidio crecer lejos de su ciudad natal para construir junto a su equipo una barberia con identidad, estilo y excelencia profesional.",
     ctaLabel: "Agenda tu experiencia",
     ctaLink: "https://wa.me/573000000000?text=Hola%20quiero%20agendar%20un%20servicio%20en%20Sosa%20Barber%20Collective",
     facts: [
