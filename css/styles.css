@@ -204,7 +204,7 @@ code {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 24px;
   padding: 16px 0;
 }
@@ -258,6 +258,43 @@ code {
 /* Ocultar brand en topbar — solo queda el menu */
 .brand {
   display: none !important;
+}
+
+.topbar-brand-icon {
+  flex-shrink: 0;
+}
+
+.topbar-brand-icon img {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  border: 1px solid rgba(195, 160, 106, 0.3);
+  object-fit: contain;
+  mix-blend-mode: lighten;
+  display: block;
+}
+
+.hero-icon-badge {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(195, 160, 106, 0.28);
+  border-radius: 16px;
+  background: rgba(195, 160, 106, 0.08);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-icon-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: lighten;
+  -webkit-mask-image: none;
+  mask-image: none;
 }
 
 .menu {
@@ -643,6 +680,57 @@ code {
 .brand-quote footer {
   margin-top: 10px;
   color: var(--ink-soft);
+  font-weight: 700;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.about-card {
+  background: var(--paper);
+  border: 1px solid rgba(195, 160, 106, 0.2);
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.about-card__icon {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  display: block;
+  line-height: 1;
+}
+
+.about-card__title {
+  color: var(--gold);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.about-card__text {
+  color: var(--ink-soft);
+  line-height: 1.8;
+  font-size: 0.97rem;
+  margin: 0;
+}
+
+.about-card__valores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.about-card__valor-chip {
+  background: rgba(195, 160, 106, 0.12);
+  border: 1px solid rgba(195, 160, 106, 0.3);
+  color: var(--gold);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
   font-weight: 700;
 }
 
@@ -1111,7 +1199,8 @@ code {
   .gallery-grid,
   .service-tiers,
   .services-grid,
-  .video-grid {
+  .video-grid,
+  .about-cards {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -1156,8 +1245,14 @@ code {
   .service-tiers,
   .services-grid,
   .video-grid,
-  .intro-grid {
+  .intro-grid,
+  .about-cards {
     grid-template-columns: 1fr;
+  }
+
+  .hero-icon-badge {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .brand::before {

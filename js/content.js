@@ -9,7 +9,7 @@ const siteContent = {
     description:
       "Este proyecto nace de la vision de Jaider, quien decidio crecer lejos de su ciudad natal para construir junto a su equipo una barberia con identidad, estilo y excelencia profesional.",
     ctaLabel: "Agenda tu experiencia",
-    ctaLink: "https://wa.me/573000000000?text=Hola%20quiero%20agendar%20un%20servicio%20en%20Sosa%20Barber%20Collective",
+    ctaLink: "https://wa.me/573125154192?text=Hola%20quiero%20agendar%20un%20servicio%20en%20Sosa%20Barber%20Collective",
     facts: [
       { value: "3", label: "barberos construyendo una marca con caracter" },
       { value: "VIP", label: "experiencias normal, VIP y Super VIP" },
@@ -36,65 +36,75 @@ const siteContent = {
     },
   },
   about: {
-    title: "Una marca joven que quiere ocupar un lugar serio en la mente de sus clientes.",
-    copy:
-      "La propuesta mezcla elegancia clasica con ambicion contemporanea. El resultado es una identidad visual sobria, masculina y aspiracional para atraer clientes que valoran la imagen, la puntualidad, el detalle y el buen servicio.",
-    signatureCards: [
-      {
-        title: "Marca con presencia",
-        copy: "Una estetica premium para que la barberia no parezca improvisada, sino bien posicionada desde el primer vistazo.",
-      },
-      {
-        title: "Talento con disciplina",
-        copy: "La comunicacion resalta juventud, tecnica, profesionalismo y hambre de crecimiento.",
-      },
-      {
-        title: "Conversion con estilo",
-        copy: "Cada bloque ayuda a vender servicios, productos y confianza sin perder sofisticacion.",
-      },
-    ],
+    mision: "En BARBER SOSA nos comprometemos a resaltar la imagen y subir la autoestima ofreciendo los mejores servicios tanto para hombres y mujeres, con profesionales en barbería, estilistas y manicuristas altamente capacitados brindando experiencias y estilos únicos a nuestros clientes proporcionando resultados excepcionales en un ambiente acogedor.",
+    vision: "Ser la mejor barbería y la más reconocida por su buen trabajo en equipo, su buena atención con los clientes, buena organización, para satisfacer cualquier necesidad.",
+    valores: ["Profesionalismo", "Calidad", "Trabajo en equipo", "Atención al cliente", "Innovación"],
   },
   tiers: [
     {
-      name: "Corte Normal",
-      description: "Corte clasico o moderno con asesoria, perfilado basico y acabado limpio.",
-      price: "Desde $35.000 COP",
+      name: "Corte Sencillo",
+      description: "Asesoría, corte de cabello, bebida (caliente o fría), shampoo, acondicionador y productos de la más alta calidad.",
+      price: "$30.000 COP",
+    },
+    {
+      name: "Corte Premium",
+      description: "Asesoría, vapor-ozono con toalla caliente, exfoliación, masaje relajante, mascarilla de puntos negros, corte, bebida, shampoo, acondicionador y productos de la más alta calidad.",
+      price: "$40.000 COP",
     },
     {
       name: "Corte VIP",
-      description: "Incluye corte, barba o cejas, bebida de cortesia y experiencia mas personalizada.",
-      price: "Desde $55.000 COP",
-    },
-    {
-      name: "Super VIP",
-      description: "Ritual completo con corte, barba, tratamiento premium, masaje y detalle editorial.",
-      price: "Desde $80.000 COP",
+      description: "Asesoría, vapor-ozono, exfoliación, masaje relajante, mascarilla con extracción, corte, bebida, mascarilla de arcilla, velo de colágeno, aromaterapia, máscara LED de fototerapia, crema facial, shampoo y acondicionador.",
+      price: "$70.000 COP",
     },
   ],
   services: [
     {
-      category: "Cabello",
-      name: "Corte clasico y fade",
-      description: "Diseno preciso y asesorado para proyectar seguridad, orden y una imagen actual.",
-      price: "$35.000 COP",
-    },
-    {
       category: "Barba",
-      name: "Perfilado premium de barba",
-      description: "Navaja, detalle y terminacion impecable para una barba que habla de cuidado y criterio.",
-      price: "$25.000 COP",
+      name: "Perfilado de barba",
+      description: "Asesoría y diseño de barba.",
+      price: "$10.000 COP",
     },
     {
-      category: "Combo",
-      name: "Corte + barba VIP",
-      description: "La combinacion ideal para quien quiere salir con una imagen completa, pulida y memorable.",
-      price: "$55.000 COP",
+      category: "Barba VIP",
+      name: "Barba VIP",
+      description: "Asesoría, vapor-ozono con toalla caliente, exfoliación, masaje relajante, diseño de barba, pigmento opcional, aceite y crema facial hidratante.",
+      price: "$20.000 COP",
+    },
+    {
+      category: "Cera",
+      name: "Depilación con cera",
+      description: "Cejas, nariz, bigote u oídos. Cada zona por separado.",
+      price: "$10.000 COP c/u",
+    },
+    {
+      category: "Cejas",
+      name: "Diseño de cejas",
+      description: "Cuchilla $5.000 · Cera $10.000",
+      price: "Desde $5.000 COP",
+    },
+    {
+      category: "Cabello",
+      name: "Ondulaciones",
+      description: "Precio según el largo del cabello.",
+      price: "Desde $150.000 COP",
+    },
+    {
+      category: "Cabello",
+      name: "Colorimetría",
+      description: "Precio según estilo y complejidad del trabajo.",
+      price: "Desde $150.000 COP",
     },
     {
       category: "Manos",
-      name: "Arreglo de unas",
-      description: "Un detalle sobrio y profesional para hombres que entienden el valor de una buena presentacion.",
-      price: "$20.000 COP",
+      name: "Manicure",
+      description: "Acrílicas desde $90k · Dipping $60k · Esculpidas $100k · Press on $70k · Semipermanente $45k · Semi hombre $35k · Builder gel $65k · Builder alargamiento $95k · Tradicional $20k",
+      price: "Desde $20.000 COP",
+    },
+    {
+      category: "Pies",
+      name: "Pedicure",
+      description: "Semipermanente $55k · Tradicional $27k",
+      price: "Desde $27.000 COP",
     },
   ],
   barbers: [
@@ -195,17 +205,16 @@ const siteContent = {
   ],
   contact: {
     copy:
-      "La pagina termina con una invitacion directa a reservar, seguir la marca y visitar el estudio en Bogota. El objetivo es cerrar con confianza, claridad y una imagen profesional.",
-    address: "Calle 70A Bis #17-68, Bogota, Colombia",
+      "Visítanos en Bogotá y reserva tu experiencia premium. Estamos listos para atenderte con el mejor equipo.",
+    address: "CRA 19 #70a-44, Bogota, Colombia",
     schedule: "Lunes a sabado de 9:00 a.m. a 8:00 p.m.",
-    phone: "+57 300 000 0000",
+    phone: "+57 312 515 4192 · +57 320 609 0331",
     email: "reservas@sosabarber.co",
-    mapQuery: "Calle 70A Bis 17-68, Bogota, Colombia",
+    mapQuery: "Carrera 19 70a-44, Bogota, Colombia",
     socials: [
-      { label: "Instagram", url: "https://instagram.com/" },
-      { label: "TikTok", url: "https://www.tiktok.com/" },
-      { label: "YouTube", url: "https://www.youtube.com/" },
-      { label: "WhatsApp", url: "https://wa.me/573000000000" },
+      { label: "Instagram", url: "https://instagram.com/sosabarber28" },
+      { label: "TikTok", url: "https://www.tiktok.com/@sosabarberr" },
+      { label: "WhatsApp", url: "https://wa.me/573125154192" },
     ],
   },
   quote: {
@@ -395,6 +404,27 @@ const renderSocials = (items) => {
     .join("");
 };
 
+const renderAboutCards = (data) => {
+  const root = document.getElementById("about-cards");
+  if (!root) return;
+  root.innerHTML = `
+    <article class="about-card">
+      <h3 class="about-card__title">Nuestra Misión</h3>
+      <p class="about-card__text">${data.mision}</p>
+    </article>
+    <article class="about-card">
+      <h3 class="about-card__title">Nuestra Visión</h3>
+      <p class="about-card__text">${data.vision}</p>
+    </article>
+    <article class="about-card">
+      <h3 class="about-card__title">Nuestros Valores</h3>
+      <div class="about-card__valores">
+        ${data.valores.map((v) => `<span class="about-card__valor-chip">${v}</span>`).join("")}
+      </div>
+    </article>
+  `;
+};
+
 const initMenu = () => {
   const button = document.querySelector(".menu-toggle");
   const menu = document.getElementById("site-menu");
@@ -426,10 +456,7 @@ const initSite = () => {
   renderHeroFacts(siteContent.hero.facts);
   renderExperience(siteContent.hero.experience);
 
-  setText("about-title", siteContent.about.title);
-  setText("about-copy", siteContent.about.copy);
-  setText("quote-text", siteContent.quote.text);
-  setText("quote-author", siteContent.quote.author);
+  renderAboutCards(siteContent.about);
 
   renderTiers(siteContent.tiers);
   renderServices(siteContent.services);
